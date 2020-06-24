@@ -2,7 +2,7 @@
 
 Route::prefix('admin')->namespace('Admin')->group(function(){
 
-    // Routes Detaisl Plans
+    // Routes Details Plans
 
     Route::get('plans/{url}/details', 'DetailPlanController@index')->name('details.plan.index');
 
