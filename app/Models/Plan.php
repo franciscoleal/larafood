@@ -15,7 +15,7 @@ class Plan extends Model
     public function search($filter = null){
         $results = $this->where('name', 'LIKE', "%{$filter}%")
                         ->orwhere('description', 'LIKE', "%{$filter}%")
-                        ->paginate(1);
+                        ->paginate();
         return $results;
     }
 }
